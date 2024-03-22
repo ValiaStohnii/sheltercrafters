@@ -1,0 +1,52 @@
+/* stylelint-disable declaration-no-important */
+@use "../utils/functions/"as*;
+@use "../utils/mixins"as*;
+
+.btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid transparent;
+  border-radius: var(--radius-main);
+  padding: 10px 16px;
+  width: 100%;
+  min-width: 100px;
+  max-width: fit-content;
+  font-weight: var(--fw-400);
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--color-white);
+  background-color: var(--color-green-300);
+  transition-property: background-color, color, border-color;
+  transition-duration: 0.2s;
+
+  &:hover,
+  &:not(.slick-arrow):focus {
+    color: var(--color-white);
+    background-color: var(--color-green-200);
+  }
+
+  &--link {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  &--request {
+    &:hover,
+    &:focus {
+      background-color: var(--color-green-200);
+    }
+  }
+
+  &--simple {
+    color: var(--color-green-300);
+    background-color: var(--color-green-200);
+
+    &:hover,
+    &:focus {
+      color: var(--color-white);
+      background-color: var(--color-green-300);
+    }
+  }
+}

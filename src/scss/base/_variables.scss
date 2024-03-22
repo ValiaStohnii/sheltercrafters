@@ -1,0 +1,36 @@
+/* stylelint-disable alpha-value-notation */
+/* stylelint-disable color-function-notation */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+:root {
+  --content-width: 1200px;
+  --container-offset: 16px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // font-family
+  --font-family-primary: "Plus Jakarta Sans", sans-serif;
+
+  // font-weight
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  // color
+  --color-white: #fff;
+  --color-gray-100:#FAFAFA;
+  --color-gray-200: rgba(255, 255, 255, 0.2);
+  --color-black: #1c1c1c;
+  --color-dark: #072125;
+  --color-green-100:rgba(238, 241, 241, 1);
+  --color-green-150: rgba(32, 72, 79, 0.08);
+  --color-green-200: #B8E4DA;
+  --color-green-250: #DCF2ED;
+  --color-green-300: #20484F;
+
+  //  radius
+  --radius-main: 8px;
+
+  // shadow
+  --shadow-primary: 0px 8px 8px -4px #1118270A;
+  --shadow-secondary: 0px 20px 24px -4px #1118271A;
+}

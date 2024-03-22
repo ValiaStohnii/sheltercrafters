@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Projects"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+    <include src="./html/_header.html" locals='{"page": "projects"}'></include>
+
+    <main class="main">
+
+      <include src="./html/_hero.html">
+        {
+          "title": "
+            Inspiring Projects That Define Modern Living
+          ",
+          "text": "
+            Projects
+          ",
+          "image": "projects",
+          "button": "Request a Quote"
+        }
+      </include>
+
+      <div class="container">
+        <include src="./html/projects/_projects.html">
+          {
+            "class_reverse": "",
+            "title": "
+              Eco-Friendly Mobile Classroom
+            ",
+            "image_title": "eco-friendly.jpeg",
+            "text": "
+              A state-of-the-art, sustainable mobile classroom designed for a local community school, featuring solar panels, rainwater harvesting, and environmentally friendly materials, providing a dynamic and eco-conscious learning environment.
+            ",
+            "image_text": "sustainable-mobile.jpeg"
+          }
+        </include>
+        <include src="./html/projects/_projects.html">
+          {
+            "class_reverse": "project--reverse",
+            "title": "
+              Modular Health Clinic
+            ",
+            "image_title": "modular-health-clinic.jpeg",
+            "text": "
+              A fully equipped, portable health clinic constructed for a rural area, designed to increase access to healthcare services. This project included multiple treatment rooms, a waiting area, and accessibility features, making medical care more accessible to remote communities.
+            ",
+            "image_text": "fully-equipped.jpeg"
+          }
+        </include>
+        <include src="./html/projects/_projects.html">
+          {
+            "class_reverse": "",
+            "title": "
+              Innovative Co-Working Space
+            ",
+            "image_title": "working-space.jpeg",
+            "text": "
+              A custom-designed, mobile co-working space created for a startup community, featuring modular workstations, high-speed internet, and flexible common areas. This project showcased the potential of portable units to provide modern, adaptable work environments that foster collaboration and creativity.            
+            ",
+            "image_text": "custom-designed.jpeg"
+          }
+        </include>
+
+        <include src="./html/projects/_request.html"></include>
+      </div>
+    </main>
+
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

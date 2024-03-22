@@ -1,0 +1,53 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.projects {
+  padding: 108px 0;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  &__images {
+    display: flex;
+
+    img {
+      width: 49%;
+
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  h2 {
+    max-width: 300px;
+    font-size: 40px;
+    line-height: 1.26;
+  }
+
+  .btn {
+    padding: 15px 35px;
+  }
+
+  @include media(tablet) {
+    padding: 30px 0;
+  }
+
+  @include media(mobile-l) {
+    h2 {
+      margin-bottom: 10px;
+      color: var(--color-tile-800);
+    }
+  }
+
+  @include media(mobile-s) {
+    &__header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}

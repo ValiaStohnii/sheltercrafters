@@ -1,0 +1,39 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.additional {
+  display: flex;
+  align-items: center;
+
+  p {
+    max-width: 525px;
+    font-weight: var(--fw-700);
+    font-size: 32px;
+    line-height: 1.26;
+  }
+
+  .container {
+    max-width: 512px;
+  }
+
+  @include media(tablet) {
+    padding: 30px 0;
+  }
+
+  @include media(mobile-l) {
+    flex-direction: column;
+
+    p,
+    .container {
+      max-width: unset;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    img {
+      aspect-ratio: 16/7;
+    }
+  }
+}

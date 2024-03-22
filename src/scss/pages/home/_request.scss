@@ -1,0 +1,129 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.request {
+  $root: &;
+
+  padding: 87px 0 82px;
+
+  &__form {
+    margin-right: 175px;
+    width: 100%;
+    max-width: 588px;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__schedule {
+    padding: 45px 0;
+  }
+
+  h2 {
+    margin-bottom: 34px;
+  }
+
+  h3 {
+    margin-bottom: 28px;
+    font-size: 20px;
+    line-height: 1.26;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  a {
+    display: block;
+    margin-bottom: 28px;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+
+  label {
+    display: block;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  textarea,
+  input {
+    border-width: 0;
+    border-radius: var(--radius-main);
+    padding: 17px 16px;
+    width: 100%;
+    font-family: var(--font-family-primary);
+    font-weight: var(--fw-400);
+    font-size: 16px;
+    background-color: var(--color-green-150);
+    resize: none;
+  }
+
+  textarea {
+    margin-bottom: 10px;
+    min-height: 156px;
+  }
+
+  .btn {
+    justify-content: center;
+    padding: 15px;
+    width: 100%;
+    max-width: unset;
+    text-align: center;
+  }
+
+  &--projects {
+    padding: 83px 0 81px;
+  }
+
+  @include media(tablet) {
+    padding: rem(60) 0;
+
+    &__content {
+      flex-direction: column;
+    }
+
+    &__form {
+      margin-bottom: 20px;
+    }
+
+    a {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+  }
+
+  @include media(mobile-l) {
+    &__form {
+      margin-right: 0;
+      width: 100%;
+      max-width: unset;
+    }
+  }
+
+  @include media(mobile-m) {
+    border-radius: calc(var(--radius-main) * 2) calc(var(--radius-main) * 2) 0 0;
+
+    .request__btn {
+      display: none;
+    }
+
+    h2,
+    h3,
+    a,
+    label {
+      margin-left: 0;
+      text-align: left;
+    }
+
+    textarea {
+      overflow: hidden;
+      margin-bottom: 20px;
+      height: 120px;
+    }
+  }
+}

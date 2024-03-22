@@ -3,20 +3,18 @@
 
 .header {
   position: fixed;
-  top: 0;
+  top: 23;
   z-index: 10;
-  padding: clamp(12px, rem(20), 17px) 0;
   width: 100%;
-  background-color: var(--color-green-300);
   transition-property: transform, padding;
   transition-duration: 0.15s;
 
   .container {
-    max-width: 1390px;
+    max-width: 1376px;
   }
 
   &.hide {
-    transform: translateY(-100%);
+    transform: translateY(-130%);
   }
 
   @include media(mobile-sm) {

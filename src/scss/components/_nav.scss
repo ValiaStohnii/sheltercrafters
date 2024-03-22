@@ -6,6 +6,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-radius: 8px;
+  padding: 20px 64px;
+  background-color: var(--color-white);
 
   &__inner {
     display: flex;
@@ -23,7 +26,7 @@
       padding-top: calc(var(--header-height) * 1.5);
       width: 100%;
       height: calc(var(--vh));
-      background-color: var(--color-green-300);
+      background-color: var(--color-white);
       transform: translateX(150%);
       transition-property: transform;
       transition-duration: 0.4s;
@@ -33,7 +36,7 @@
   &__list {
     display: flex;
     align-items: center;
-    margin: 0 auto;
+    margin: 0 140px 0 auto;
 
     @include media(tablet-wide) {
       margin: 0 auto;
@@ -47,7 +50,7 @@
 
   &__item {
     &:not(:last-of-type, .footer .nav__item) {
-      margin-right: 32px;
+      margin-right: 25px;
 
       @include media(tablet) {
         margin-right: 12px;
@@ -67,23 +70,23 @@
     font-weight: var(--fw-400);
     font-size: 16px;
     line-height: 1.5;
-    color: var(--color-white);
+    color: var(--color-black);
 
     &.true {
-      border-bottom: 2px solid var(--color-white);
+      color: var(--color-orange-200);
     }
   }
 
   .btn {
-    padding: 9px 14px;
-    font-size: 14px;
+    padding: 10px 14px;
 
-    &--link {
-      margin-right: 15px;
+    &--simple {
+      margin-right: 8px;
+      padding: 10px 16px;
       min-width: unset;
 
       @include media(tablet) {
-        margin-right: 12px;
+        margin-right: 8px;
       }
 
       @include media(mobile-l) {

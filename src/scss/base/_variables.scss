@@ -1,13 +1,14 @@
 /* stylelint-disable alpha-value-notation */
 /* stylelint-disable color-function-notation */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
 :root {
-  --content-width: 1200px;
+  --content-width: 1216px;
   --container-offset: 16px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // font-family
-  --font-family-primary: "Plus Jakarta Sans", sans-serif;
+  --font-family-primary: "Inter", sans-serif;
 
   // font-weight
   --fw-400: 400;
@@ -17,15 +18,23 @@
 
   // color
   --color-white: #fff;
-  --color-gray-100:#FAFAFA;
-  --color-gray-200: rgba(255, 255, 255, 0.2);
-  --color-black: #1c1c1c;
-  --color-dark: #072125;
-  --color-green-100:rgba(238, 241, 241, 1);
-  --color-green-150: rgba(32, 72, 79, 0.08);
-  --color-green-200: #B8E4DA;
-  --color-green-250: #DCF2ED;
-  --color-green-300: #20484F;
+  // --color-gray-100:#FAFAFA;
+  // --color-gray-200: rgba(255, 255, 255, 0.2);
+
+  --color-black: #161620;
+  --color-dark: #292E3D;
+
+  // --color-green-100:rgba(238, 241, 241, 1);
+  // --color-green-150: rgba(32, 72, 79, 0.08);
+  // --color-green-200: #B8E4DA;
+  // --color-green-250: #DCF2ED;
+  // --color-green-300: #20484F;
+
+  --color-orange-50: #FFF9F6;
+  --color-orange-100: rgba(233, 76, 4, 0.12);
+  --color-orange-150:#FEF1EB;
+  --color-orange-200:#E94C04;
+  --color-orange-300:#902E01;
 
   //  radius
   --radius-main: 8px;

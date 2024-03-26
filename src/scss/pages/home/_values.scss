@@ -1,0 +1,129 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.values {
+  padding: 88px 0 86px;
+
+  h2 {
+    margin: 0 auto  46px;
+    line-height: 1.26;
+  }
+
+  h3 {
+    margin-bottom: 16px;
+    letter-spacing: 0.5px;
+    color: var(--color-orange-300);
+  }
+
+  &__grid {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 63px 32px;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 121px;
+    height: 100%;
+    background-color: var(--color-white);
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      border-radius: 16px;
+      width: 96px;
+      height: 96px;
+      background-image: url("../images/icons/innovation.svg");
+      background-position: center;
+      background-size: 48px;
+      background-repeat: no-repeat;
+      background-color: var(--color-orange-100);
+      transform: translate(-50%);
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    &--innovation {
+      &::before {
+        background-image: url("../images/icons/innovation.svg");
+        background-size: 48px;
+      }
+    }
+
+    &--integrity {
+      &::before {
+        background-image: url("../images/icons/integrity.svg");
+        background-size: 48px;
+      }
+    }
+
+    &--quality {
+      &::before {
+        background-image: url("../images/icons/quality.svg");
+        background-size: 48px;
+      }
+    }
+
+    &--sustainability {
+      &::before {
+        background-image: url("../images/icons/sustainability.svg");
+        background-size: 48px;
+      }
+    }
+
+    &--customer {
+      &::before {
+        background-image: url("../images/icons/customer.svg");
+        background-size: 48px;
+      }
+    }
+
+    &--teamwork {
+      &::before {
+        background-image: url("../images/icons/teamwork.svg");
+        background-size: 48px;
+      }
+    }
+  }
+
+  .btn {
+    padding: 14px 36px;
+  }
+
+  @include media(tablet) {
+    padding: 30px 0;
+  }
+
+  @include media(mobile-l) {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    &__item {
+      padding-top: 100px;
+
+      &:last-child {
+        grid-column: auto;
+      }
+    }
+  }
+
+  @include media(mobile-s) {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

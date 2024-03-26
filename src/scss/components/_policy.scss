@@ -2,22 +2,31 @@
 @use "../utils/mixins"as*;
 
 .policy {
-  padding: 86px 0;
+  padding: 190px 0;
   line-height: 1.5;
-  color: var(--color-dark);
+  color: var(--color-black);
+
+  &__content {
+    &:not(:last-child) {
+      margin-bottom: 48px;
+    }
+  }
 
   h1 {
     position: relative;
     margin: 0 auto 48px;
-    font-size: clamp(32px, 1.6176rem + 1.3vi, 64px);
+    font-size: clamp(36px, 3.2451rem + 1.0458vi, 48px);
+    line-height: 1.21;
+    color: var(--color-black);
   }
 
   h2 {
     margin-bottom: 24px;
     font-family: var(--font-family-primary);
-    font-weight: var(--fw-700);
-    font-size: 32px;
-    line-height: 1.26;
+    font-weight: var(--fw-600);
+    font-size: 30px;
+    line-height: 1.33;
+    color: var(--color-orange-200);
   }
 
   ul {
@@ -39,16 +48,21 @@
   }
 
   p {
-    font-size: 18px;
-    line-height: 1.5;
+    font-size: 20px;
+    line-height: 1.17;
+    letter-spacing: 1.1px;
 
     &:not(:last-child) {
-      margin-bottom: 24px;
+      margin-bottom: 48px;
     }
   }
 
   a {
     text-decoration: underline;
     color: var(--color-tile-800);
+  }
+
+  @include media(tablet) {
+    padding: 140px 0;
   }
 }

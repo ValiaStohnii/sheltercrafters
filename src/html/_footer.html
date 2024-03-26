@@ -1,31 +1,54 @@
 <footer class="footer">
   
-  <div class="footer__inner">
-    <div class="container">
-      <div class="footer__links">
-        <a href="mailto:contact@portableunitbuilders.com">
-          contact@portableunitbuilders.com
-        </a>
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__nav">
+  
         <a class="logo" href="index.html">
-          <img class="logo__img" src="./images/logo.svg" alt="Shelter Crafters" width="252" height="30">
+          <img class="logo__img" src="./images/logo.svg" alt="Shelter Crafters" width="306" height="30" loading="lazy">
         </a>
-      </div>
+ 
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link {{ page === 'home' }}">
+              Home
+            </a>
+          </li>
 
-      <div class="footer__btns">
-        <a class="btn btn--link signup-btn" href="sign-up.html">
+          <li class="nav__item">
+            <a href="services.html" class="nav__link {{ page === 'services' }}">
+              Services
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="projects.html" class="nav__link {{ page === 'projects' }}">
+              Projects
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="faq.html" class="nav__link {{ page === 'faq' }}">
+              FAQs
+            </a>
+          </li>
+        </ul>
+
+        <a class="btn btn--simple signup-btn" href="sign-up.html">
           Sign Up
         </a>
 
-        <button class="btn btn--simple request-btn" type="button">
-          Request a Qoute
+        <button class="btn btn--request request-btn" type="button">
+          Request Service
         </button>
       </div>
     </div>
   </div>
 
-    <div class="footer__copyrigth container">
+  <div class="footer__copyrigth">
+    <div class="container">
       <p>
-        Portable Unit Builders © 2024. All Rights Reserved
+        Shelter Crafters © 2024. All Rights Reserved
       </p>
 
       <div class="copyrigth__nav">
@@ -44,7 +67,7 @@
         </ul>
       </div>
     </div>
- 
+  </div>
 </footer>
 
 

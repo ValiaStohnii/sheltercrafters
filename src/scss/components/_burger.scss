@@ -8,10 +8,10 @@
   --move: calc(var(--buger-size) / 3);
   --move-decrement: calc(var(--move) * -1);
   --transition-time: 0.5s;
-  --lines-color: var(--color-white);
+  --lines-color: var(--color-orange-300);
 
   position: absolute;
-  right: 0;
+  right: 20px;
   top: 50%;
   display: none;
   width: calc(var(--buger-size) + 5px);

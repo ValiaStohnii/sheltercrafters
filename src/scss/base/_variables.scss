@@ -18,28 +18,17 @@
 
   // color
   --color-white: #fff;
-  // --color-gray-100:#FAFAFA;
-  // --color-gray-200: rgba(255, 255, 255, 0.2);
-
   --color-black: #161620;
-  --color-dark: #292E3D;
-
-  // --color-green-100:rgba(238, 241, 241, 1);
-  // --color-green-150: rgba(32, 72, 79, 0.08);
-  // --color-green-200: #B8E4DA;
-  // --color-green-250: #DCF2ED;
-  // --color-green-300: #20484F;
-
-  --color-orange-50: #FFF9F6;
+  --color-dark: #292e3d;
+  --color-orange-50: #fff9f6;
   --color-orange-100: rgba(233, 76, 4, 0.12);
-  --color-orange-150:#FEF1EB;
-  --color-orange-200:#E94C04;
-  --color-orange-300:#902E01;
+  --color-orange-150:#fef1eb;
+  --color-orange-200:#e94c04;
+  --color-orange-300:#902e01;
 
   //  radius
   --radius-main: 8px;
 
   // shadow
-  --shadow-primary: 0px 8px 8px -4px #1118270A;
-  --shadow-secondary: 0px 20px 24px -4px #1118271A;
+  --shadow-primary: 0 8px 16px 0 rgba(0, 0, 0, 0.04);
 }

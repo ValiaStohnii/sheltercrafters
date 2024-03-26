@@ -8,6 +8,7 @@
   justify-content: space-between;
   border-radius: 8px;
   padding: 20px 64px;
+  box-shadow: var(--shadow-primary);
   background-color: var(--color-white);
 
   &__inner {
@@ -49,7 +50,7 @@
   }
 
   &__item {
-    &:not(:last-of-type, .footer .nav__item) {
+    &:not(:last-of-type) {
       margin-right: 25px;
 
       @include media(tablet) {
@@ -78,7 +79,7 @@
   }
 
   .btn {
-    padding: 10px 14px;
+    padding: 10px 15px;
 
     &--simple {
       margin-right: 8px;
@@ -88,14 +89,23 @@
       @include media(tablet) {
         margin-right: 8px;
       }
+    }
 
-      @include media(mobile-l) {
-        margin: 0 auto 15px;
-      }
+    @include media(tablet) {
+      padding: 8px 10px;
+      font-size: 16px;
     }
 
     @include media(mobile-l) {
       margin: 0 auto;
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
     }
+  }
+
+  @include media(tablet) {
+    padding: 20px;
   }
 }

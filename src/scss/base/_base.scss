@@ -15,8 +15,8 @@ body {
   font-size: clamp(16px, 1vw, 20px);
   line-height: 1.5;
   letter-spacing: 0;
-  color: var(--color-gray-700);
-  // background-color: var(--color-white);
+  color: var(--color-black);
+  background-color: var(--color-white);
   font-optical-sizing: auto;
 
   &__body {
@@ -76,17 +76,5 @@ body {
   &.open {
     opacity: 1;
     visibility: visible;
-  }
-}
-
-.overlay {
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    inset: 0;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.48) 53.89%, rgba(0, 0, 0, 0) 74.96%);
   }
 }

@@ -108,8 +108,12 @@
       flex-wrap: wrap;
     }
 
+    .nav__list {
+      margin-right: 20px;
+    }
+
     .logo {
-      margin-right: 40px;
+      margin-right: 20px;
     }
   }
 
@@ -119,6 +123,10 @@
     &__inner {
       flex-direction: column;
       margin: 0 auto;
+    }
+
+    .nav__list {
+      margin-right: auto;
     }
 
     .logo {

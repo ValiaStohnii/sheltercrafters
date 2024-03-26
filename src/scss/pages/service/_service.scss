@@ -67,10 +67,17 @@
 
       &--reverse {
         margin: 0 auto;
+        padding-left: 0;
       }
   
       &--last {
         margin: 0 auto;; 
+      }
+    }
+
+    &__grid {
+      &:not(:last-child) {
+        margin-bottom: 40px;
       }
     }
   }
@@ -109,6 +116,7 @@
 
     img {
       aspect-ratio: 16/7;
+      width: 100%;
     }
   }
 }
